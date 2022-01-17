@@ -29,6 +29,8 @@
   /* цвет иконок */
   --icon-color: #afb1b8;
   --acession-bg-color: rgba(255, 255, 255, 0.1);
+/* Transition */
+--transition-property: 
 }
 *,
 *::before,
@@ -140,7 +142,7 @@ img {
   display: block;
 
   width: 100%;
-  height: 4px;
+  height: 2px;
 
   background-color: var(--acent-color);
   border-radius: 4px;
@@ -169,6 +171,9 @@ img {
   fill: var(--acent-color);
 }
 .contacts-header {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -176,12 +181,7 @@ img {
 }
 .contacts-header-svg {
   margin-right: 10px;
-  fill: var(--secondary-text-color);
-}
-.contacts-header-svg:hover,
-.contacts-header-svg:focus {
-  color: var(--acent-color);
-  fill: var(--acent-color);
+  fill: currentColor;
 }
 
 /* Hero */
@@ -578,18 +578,17 @@ img {
   position: relative;
   overflow: hidden;
 }
-
 .overlay-item {
   position: absolute;
   top: 100%;
   left: 0;
 
-  width: 100%;
-  height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  height: 100%;
 
   background-color: var(--over-bg-color);
 }
@@ -597,6 +596,7 @@ img {
 .section-link:hover .overlay-item,
 .section-link:focus .overlay-item {
   transform: translatey(-100%);
+  transition: transform 250ms ease; cubic-bezier(0.4, 0, 0.2, 1);
 }
 .overlay-item-description {
   padding: 24px;
@@ -605,3 +605,4 @@ img {
   line-height: 1.55;
   font-weight: 400;
 }
+/* Modal */

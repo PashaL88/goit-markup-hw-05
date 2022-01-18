@@ -18,6 +18,7 @@
   --gradient-color: rgba(47, 48, 58, 0.4);
   --description-bg-color: rgba(47, 48, 58, 0.8);
   --over-bg-color: rgba(33, 150, 243, 0.9);
+  --white-bg-color: #ffffff;
   /* Цвет кнопок */
   --button-bg-color: #f5f4fa;
   --primary-btn-color: #212121;
@@ -563,7 +564,7 @@ img {
 
 .container-description {
   padding: 20px 24px 20px 24px;
-  background: var(--primary-white-color);
+  background: var(--white-bg-color);
 }
 .description-meaning {
   margin-bottom: 0px;
@@ -630,7 +631,7 @@ img {
   width: 528px;
   height: 581px;
 
-  background: var(--primary-white-color);
+  background-color: var(--white-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -646,6 +647,7 @@ img {
 
   width: 30px;
   height: 30px;
+  background-color: var(--btn-white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
